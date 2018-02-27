@@ -3,7 +3,7 @@ XXFLAGS = -Wall -Werror
 all: build
 
 build:
-	g++ --std=c++1z A_Standard_Exceptions.cpp -o launch.o
+	g++ --std=c++1z A_Custom_Exception.cpp -o launch.o
 
 run: build
 	./launch.o
