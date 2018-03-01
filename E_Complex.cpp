@@ -33,6 +33,12 @@ Complex operator+(double obj1, const Complex& obj2) {
   double imag = obj2.getImag();
   return Complex(real,imag); 
 }
+bool Complex::operator==(const Complex& other) const {
+  return (other.getReal() == this->real && other.getImag() == this->imag);
+}
+bool Complex::operator!=(const Complex& other) const {
+  return !(*this==other);
+}
 double Complex::getReal() const {
    return this->real;
 }

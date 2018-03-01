@@ -14,6 +14,8 @@ namespace caveofprogramming {
     Complex& operator=(const Complex& other);
     double getReal() const;
     double getImag() const;
+    bool operator==(const Complex& other) const;
+    bool operator!=(const Complex& other) const;
     void print();
   };
 
