@@ -39,6 +39,9 @@ bool Complex::operator==(const Complex& other) const {
 bool Complex::operator!=(const Complex& other) const {
   return !(*this==other);
 }
+Complex Complex::operator*() const {
+  return Complex(this->real,-this->imag);
+}
 double Complex::getReal() const {
    return this->real;
 }
