@@ -18,5 +18,8 @@ namespace caveofprogramming {
   };
 
   std::ostream& operator<<(std::ostream& out, const Complex& obj);
+  Complex operator+(const Complex& obj1, const Complex& obj2);
+  Complex operator+(const Complex& obj1, double obj2);
+  Complex operator+(double obj1, const Complex& obj2);
 } /* namespace caveofprogramming */
 #endif /* E_COMPLEX_H_ */
