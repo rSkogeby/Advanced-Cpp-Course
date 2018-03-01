@@ -3,7 +3,7 @@ XXFLAGS = -Wall -Werror
 all: build
 
 build:
-	g++ --std=c++1z E_Overloading_the_Dereference_Operator.cpp E_Complex.cpp E_Complex.h -o launch.o
+	g++ --std=c++1z F_Templates_An_Important_Note.cpp -o launch.o
 
 run: build
 	./launch.o
