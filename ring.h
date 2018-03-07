@@ -12,7 +12,8 @@ public:
 
 };
 
-class ring::iterator {
+template<typename T>
+class ring<T>::iterator {
   public: 
     void print() {
       std::cout << "Hello from iterator" << std::endl;

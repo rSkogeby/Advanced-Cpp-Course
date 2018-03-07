@@ -3,7 +3,7 @@ XXFLAGS = -Wall -Werror
 all: build
 
 build:
-	g++ --std=c++17 WORKING.cpp -o launch.o
+	g++ --std=c++17 WORKING.cpp ring.h -o launch.o
 
 run: build
 	./launch.o
